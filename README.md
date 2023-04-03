@@ -13,6 +13,15 @@ We are looking at how energy consumption has changed by country, over time. This
 
 Energy is needed to power our world but, as we know, climate change and lasting effects on the health of the living beings have devastating effects. Analyzing and understanding energy trends will allow us to shape the future of our planet’s health. 
 
+## Questions We Explored
+1. How do countries differ in terms of energy consumption and production over time? 
+2. Has the Paris Agreement had an impact on energy use?
+3. Did other historical benchmarks impact energy consumption (covid pandemic, cryptocurrency datamining)?
+4. What countries are producing the most renewable electricity?
+
+## Key Findings
+Could look at 1 or 2 of each of our findings to make a story tying into the above background
+
 ## Dataset
 World energy data 1990 - 2020 - Tracking Global Energy Trends: An Analysis of 1990-2020 Data
 https://www.kaggle.com/datasets/shub218/energy-data-1990-2020?select=Energy+data+1990+-+2020.csv
