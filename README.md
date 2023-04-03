@@ -23,7 +23,7 @@ Energy is needed to power our world but, as we know, climate change and lasting 
 Could look at 1 or 2 of each of our findings to make a story tying into the above background
 
 ## Dataset
-World energy data 1990 - 2020 - Tracking Global Energy Trends: An Analysis of 1990-2020 Data
+Tracking Global Energy Trends: An Analysis of 1990-2020 Data
 https://www.kaggle.com/datasets/shub218/energy-data-1990-2020?select=Energy+data+1990+-+2020.csv
 
 ## Submission Includes
