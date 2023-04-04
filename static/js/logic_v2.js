@@ -13,17 +13,18 @@
 // })
 
 //create list of colorscales (same length as energy_options)
-colorscales = ["Greens","YlOrRd","Blues", "Viridis", "Portland", "Cividis", 
+colorscales = ["Blues", "Viridis", "Portland", "Cividis", 
 "Earth", "Rainbow", "Blackbody","Bluered", "Reds","YlGnBu", "Portland", "Picnic", "Jet", "Hot", "Electric", "RdBu" ]
 
-units = ["Mtoe", "Mtoe","MtCO2", "Mt", "Mt", "bcm", 
+units = ["Mt", "Mt", "bcm", 
 "bcm", "Mt", "Mt","Mt", "%","%", "%", "tCO2/toe", "kCO2/$15p", "koe/$15p", "TWh", "TWh" ]
 function init(){
 //save reference to select html object
 let selection = d3.select("#energy-select")
 //hard code the from csv
-energy_options = ["total_energy_production","total_energy_consumption",
-"co2_emissions", "oil_products_consumption",	"refined_oil_products_production",
+energy_options = [//"total_energy_production",//"total_energy_consumption",
+//"co2_emissions"
+"oil_products_consumption",	"refined_oil_products_production",
     "natural_gas_production",	"natural_gas_consumption",	"coal_lignite_production",	
     "coal_lignite_consumption",	"crude_oil_production",	"share_wind_solar_electricity_production",
     	"share_renewables_electricity_production",	"share_electricity_final_energy_consumption",	
