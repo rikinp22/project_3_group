@@ -12,23 +12,50 @@
 //     console.log(total_consumption)
 // })
 
+//create list of colorscales (same length as energy_options)
+colorscales = ["Blues","Greens", "Blues"]
+
+units = ["Mt", "bcm", "Mt"]
+function init(){
+//save reference to select html object
+let selection = d3.select("#energy-select")
+//hard code the from csv
+energy_options = [
+    "oil_products_consumption",
+    "natural_gas_consumption",
+    "coal_lignite_consumption"
+]
+
+//populate dropdown with csv headers (text, property value)
+    energy_options.forEach(option =>{
+        selection.append("option").text(option).property("value",option)
+    })
+
+
+// get the iso from the countries json
 d3.json("/static/js/countries.json").then(country => {
-    getData(country);
+    getData(country, energy_options[0]);
 });
 
-function getData(countries) {
-    console.log(countries);
+
+
+}
+function getData(countries,chosen_x) {
+    //console.log(countries);
+
     function filter_and_unpack(rows, key, year) {
         //console.log(rows)
         return rows.filter(d => d.year == year).map(row => row[key])
     }
     d3.csv("/cleaned_data_lat_long.csv").then(rows => {
-
+        //get value of dropdown save a
+        //let chosen_x = d3.select("#energy-select").property("value")
+        console.log(chosen_x)
 
 
         rows.forEach(element => {
             element.year = +element.year;
-            element.total_energy_consumption = +element.total_energy_consumption;
+            element.chosen_x = +element.chosen_x;
             var code = countries.filter(o => o.name == element.country).map(o => o.code)[0];
             element.isoCode = code;
         });
@@ -41,7 +68,7 @@ function getData(countries) {
 
         for (var i = 0; i <= n; i++) {
             //console.log(rows[0])
-            var z = filter_and_unpack(rows, 'total_energy_consumption', num)
+            var z = filter_and_unpack(rows, chosen_x, num)
             var country_name = filter_and_unpack(rows, 'country', num)
             //console.log(z)
             //var lat = rows.map(d => [d.latitude, d.longitude]);
@@ -62,6 +89,12 @@ function getData(countries) {
             num = num + 3
         }
         console.log(frames[0].data[0].locations);
+        //get index of chosen_x
+        let index = energy_options.indexOf(chosen_x);
+        console.log(index);
+        let colorscale = colorscales[index];
+        let unit = units[index];
+
         var data = [{
             type: 'choropleth',
             locationmode: 'country',
@@ -71,10 +104,10 @@ function getData(countries) {
             zauto: true,
             //zmin: 30,
             //zmax: 90
-            colorscale: 'Greens',
+            colorscale: colorscale,
             reversescale: true,
             colorbar: {
-                title: 'Mtoe'
+                title: unit//'Mtoe'
             },
 
         }];
@@ -162,4 +195,9 @@ function getData(countries) {
         });
     });
 
+}
+init();
+function optionchange(chosen_x){
+    d3.json("/static/js/countries.json").then(country => {
+        getData(country, chosen_x)});
 }
