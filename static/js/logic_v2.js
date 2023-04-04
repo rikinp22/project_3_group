@@ -13,6 +13,7 @@
 // })
 
 //create list of colorscales (same length as energy_options)
+<<<<<<< HEAD
 colorscales = ["Blues", "Viridis", "Portland", "Cividis", 
 "Earth", "Rainbow", "Blackbody","Bluered", "Reds","YlGnBu", "Portland", "Picnic", "Jet", "Hot", "Electric", "RdBu" ]
 
@@ -32,19 +33,76 @@ energy_options = [//"total_energy_production",//"total_energy_consumption",
 	"electricity_production","electricity_consumption"
 ]
 //populate dropdown with csv headers (text, property value)
+=======
+colorscales = ["Greens","Greens","Cividis", "Blues", "Greens", "Blues", 
+"Cividis", "Cividis", "Cividis","Cividis"]
+
+// units for each drop down
+units = [
+    "Mtoe", 
+    "Mtoe",
+    "MtCO2", 
+    "Mt", 
+    // "Mt", 
+    // "bcm", 
+    "bcm", 
+    // "Mt", 
+    "Mt",
+    // "Mt", 
+    "%",
+    "%", 
+    // "%",
+    // "tCO2/toe",
+    // "kCO2/$15p",
+    // "koe/$15p",
+    "TWh",
+    "TWh"
+ ]
+
+
+function init(){
+    //save reference to select html object
+    let selection = d3.select("#energy-select")
+
+    //hard code the from csv
+    energy_options = [
+        "total_energy_production",
+        "total_energy_consumption",
+        "co2_emissions", 
+        "oil_products_consumption",	
+        // "refined_oil_products_production",
+        // "natural_gas_production", 
+        "natural_gas_consumption",
+        // "coal_lignite_production",	
+        "coal_lignite_consumption",
+        // "crude_oil_production",
+        "share_wind_solar_electricity_production",
+        "share_renewables_electricity_production",
+        // "share_electricity_final_energy_consumption",	
+        // "average_co2_factor",
+        //"co2_ppp",
+        // "energy_intensity_gdp_ppp",
+        "electricity_production",
+        "electricity_consumption"
+    ]
+
+
+    //populate dropdown with csv headers (text, property value)
+>>>>>>> 78e4cd4ebc3575731764724a58778439e5353fe6
     energy_options.forEach(option =>{
         selection.append("option").text(option).property("value",option)
     })
 
 
-// get the iso from the countries json
-d3.json("/static/js/countries.json").then(country => {
+    // get the iso from the countries json
+    d3.json("/static/js/countries.json").then(country => {
     getData(country, energy_options[0]);
-});
-
-
+    });
 
 }
+
+
+
 function getData(countries,chosen_x) {
     //console.log(countries);
 
@@ -57,7 +115,7 @@ function getData(countries,chosen_x) {
         //let chosen_x = d3.select("#energy-select").property("value")
         console.log(chosen_x)
 
-
+        //match each row country value to its ISO equivalent 
         rows.forEach(element => {
             element.year = +element.year;
             element.chosen_x = +element.chosen_x;
@@ -65,6 +123,7 @@ function getData(countries,chosen_x) {
             element.isoCode = code;
         });
 
+        //initialize df, slider steps
         var frames = []
         var slider_steps = []
 
@@ -72,7 +131,7 @@ function getData(countries,chosen_x) {
         var num = 1990;
 
         for (var i = 0; i <= n; i++) {
-            //console.log(rows[0])
+            
             var z = filter_and_unpack(rows, chosen_x, num)
             var country_name = filter_and_unpack(rows, 'country', num)
             //console.log(z)
