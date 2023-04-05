@@ -1,5 +1,6 @@
 # World Energy Trends (1990-2020)
 Group Project #3
+
 Team: Jiamin Li, Anuja Panthari, Kelsey Brantner, Rikin Patel, and Laura Jordan
 
 ## Background
