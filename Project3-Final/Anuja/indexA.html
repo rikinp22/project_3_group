@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-2.18.2.min.js'></script>
+	<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+
+<body>
+  <select id="energy-select" onchange = "optionchange(this.value)"></select>
+	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+  <!-- Our JavaScript -->
+  <script type="text/javascript" src="static/js/logic_v2Anuja.js"></script>
+  
+  <script type="text/javascript" src="static/js/bar.js"></script>
+  <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+  <div id="plot"></div>
+  <!-- script src="data.js"></script>-->
+  <script src="plot.js"></script>
+  
+</body>
+
+</html>
