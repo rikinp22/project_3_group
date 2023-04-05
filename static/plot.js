@@ -1,4 +1,4 @@
-d3.csv("energy_sources.csv").then(function (data) {
+d3.csv("static/energy_sources.csv").then(function (data) {
   console.log(data);
   //To keep warming to 1.5 degrees, countries must cut emissions by at least 45 per cent compared to 2010 levels.
   //2010 levels of net emmissions
