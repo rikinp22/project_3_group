@@ -41,6 +41,6 @@ To complete this assignment, we attended class, reviewed notes, attended office 
 * Final Code and HTML:
 
 ## References
-*GDP: https://www.macrotrends.net/countries/WLD/world/gdp-gross-domestic-product
+*GDP: https://www.macrotrends.net/countries/WLD/world/gdp-gross-domestic-product <br>
 *Population: https://www.macrotrends.net/countries/WLD/world/population
 
