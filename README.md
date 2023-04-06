@@ -34,10 +34,10 @@ To complete this assignment, we attended class, reviewed notes, attended office 
 
 ## Submission Includes 
 * Will complete where TAs can find all final code once we are fully finished loading items to GitHub
-* 
-* 
-* 
-* 
+* Proposal:
+* SQL:
+* Flask:
+* Final Code and HTML:
 * 
  
 
