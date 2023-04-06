@@ -39,6 +39,8 @@ To complete this assignment, we attended class, reviewed notes, attended office 
 * SQL:
 * Flask:
 * Final Code and HTML:
-* 
- 
+
+## References
+*GDP: https://www.macrotrends.net/countries/WLD/world/gdp-gross-domestic-product
+*Population: https://www.macrotrends.net/countries/WLD/world/population
 
