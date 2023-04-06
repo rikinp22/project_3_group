@@ -15,6 +15,7 @@ The data set used for this project can be found at: https://www.kaggle.com/datas
 1. How’s energy production and consumption changing year over year?
    * The total energy production have increased by 58% from 7,851 mtoe to 12,375 mtoe.
    * The total energy consumption have increased by 57% from 7,635 mtoe to 11,968 mtoe.
+   * For reference: the population increased by 46% and global GDP soar up by 235% for the last 3 decades. 
 2. How do energy trends differ between fossil fuel type?
    * Across the 30 years, US, Russia, India and China had the highest overall consumption across all fossil fuel energy types.
    * Oil and natural gas increased over time for most countries.
@@ -34,10 +35,12 @@ To complete this assignment, we attended class, reviewed notes, attended office 
 
 ## Submission Includes 
 * Will complete where TAs can find all final code once we are fully finished loading items to GitHub
-* 
-* 
-* 
-* 
-* 
- 
+* Proposal:
+* SQL:
+* Flask:
+* Final Code and HTML:
+
+## References
+*GDP: https://www.macrotrends.net/countries/WLD/world/gdp-gross-domestic-product
+*Population: https://www.macrotrends.net/countries/WLD/world/population
 
