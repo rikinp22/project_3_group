@@ -15,7 +15,7 @@ The data set used for this project can be found at: https://www.kaggle.com/datas
 1. How’s energy production and consumption changing year over year?
    * The total energy production have increased by 58% from 7,851 mtoe to 12,375 mtoe.
    * The total energy consumption have increased by 57% from 7,635 mtoe to 11,968 mtoe.
-   * For reference: the population increased by 46% and global GDP soar up by 235% for the last 3 decades. 
+   * For reference: the population increased by 47% and global GDP soar up by 274% for the last 3 decades. 
 2. How do energy trends differ between fossil fuel type?
    * Across the 30 years, US, Russia, India and China had the highest overall consumption across all fossil fuel energy types.
    * Oil and natural gas increased over time for most countries.
