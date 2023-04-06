@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+	<!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-2.18.2.min.js'></script>
+	<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@0.11.0/dist/hls.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>World Energy</title>
+  <script src="{{ url_for('static', filename='plotK.js') }}"></script>
+  <!-- <script src="plotK.js"></script> -->
+  <script src="{{ url_for('static', filename='plotL.js') }}"></script>
+  <!-- <script src="plotL.js"></script> -->
+  <!-- <script src="{{ url_for('static', filename='plot2L.js') }}"></script> -->
+  <!-- <script src="plot2L.js"></script> -->
+  <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body onload="main()">
+
+  <!--Title-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1 style = "color:darkgreen">World Energy Trends (1990-2020)</h1>
+        <h2 style = "color:navy">Jiamin Li, Anuja Panthari, Kelsey Brantner, Rikin Patel, and Laura Jordan</h2>     
+      </div>
+     </div>
+  </div>
+
+  <!--Question 1 and Bullets-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h2 style="color: darkgreen; font-size: 30px;">How’s energy production and  consumption changing year over year?</h2>
+        <h3 style="color: #640700; text-align: left; font-size: 20px;">Key Findings:</h3>
+        <ul>
+        <li style="color:#640700; text-align: left; font-size: 18px;">The total energy production have increased by 58% from 7,851 mtoe to 12,375 mtoe.</li>
+        <li style="color:#640700; text-align: left; font-size: 18px;">The total energy consumption have increased by 57% from 7,635 mtoe to 11,968 mtoe.</li>
+        </ul>
+      </div>
+    </div>
+
+  <!--Jiamin's Map-->
+  <select id="energy-select" onchange = "optionchange(this.value)"></select>
+  <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+    <!-- Our JavaScript -->
+    <script src="{{ url_for('static', filename='logic_v2.js') }}"></script>
+    <!-- <script type="text/javascript" src="static/js/logic_v2.js"></script> -->
+    <!-- <script type="text/javascript" src="static/js/bar.js"></script> -->
+ 
+    <div id="plot"></div>
+  </div> 
+
+  <!--Question 2 and Bullets-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h2 style="color: darkgreen; font-size: 30px;">How do energy trends differ between fossil fuel type?</h2>
+        <p style="color: navy; font-size: 26px;">3 different types of fossil fuels: oil (petroleum), coal, and natural gas</p>
+        <h3 style="color: #640700; font-size: 20px;">Key Findings:</h3>
+        <ul>
+        <li style="color:#640700; font-size: 18px;">Across the 30 years, US, Russia, India and China had the highest overall consumption across all fossil fuel energy types.</li>
+        <li style="color:#640700; font-size: 18px;">Oil and natural gas increased over time for most countries.</li>
+        <li style="color:#640700; font-size: 18px;">Coal consumption increased over time only for China and India.</li>
+        </ul>
+      </div>
+    </div>
+    <select id="energy-select-anuja" onchange="optionchange2(this.value)"></select>
+    <div id='myDiv2'><!-- Plotly chart will be drawn inside this DIV --></div>
+    <!-- Our JavaScript -->
+    <script src="{{ url_for('static', filename='logic_v2Anuja.js') }}"></script>
+    <!-- <script type="text/javascript" src="static/js/logic_v2Anuja.js"></script> -->
+    <!-- <script type="text/javascript" src="static/js/bar.js"></script> -->
+    <div id="plot2"></div>
+    
+  </div> 
+
+
+  <!--Question 3 and Bullets-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h2 style="color: darkgreen; font-size: 30px;">What has been the impact of the Paris Agreement?</h2>
+        <p style="color: navy; text-align: left; font-size: 26px;">In 2015 over 190 countries agreed to a legally binding international agreement, called the Paris Agreement. Main goals of the agreement:</p>
+        <ul>
+        <li style="color:navy; font-size: 22px;">Keep global warming to no more than 1.5 degrees Celsius.</li>
+        <li style="color: navy; font-size: 22px;">In 2030 have reduced CO2 emissions from 2010 by at least 45%.</li>
+        <li style="color:navy; font-size: 22px;">By 2050 complete transition to net zero emissions.</li>
+        <p style="color: navy; text-align: center; "></p>
+        <p style="color: navy; text-align: center; font-size: 22px;">The graph represents progress towards the 2030 goal from the top CO2 emitters.</p>
+        <p style="color:#640700; text-align: center; font-size: 16px;">Additional information can be found at: https://www.un.org/en/climatechange/paris-agreement</p>  
+        </ul>
+      </div>
+    </div>
+  
+  <!--Kelsey's Chart-->
+  <!--Updated Kelsey's code to reference "myChart2"-->
+    <canvas id="myChart2" width="1000" height="600"></canvas>
+    <div id="plot"></div>
+    <script src="{{ url_for('static', filename='plotK.js') }}"></script>
+    <!-- <script src="plotK.js"></script> -->
+  </div>
+
+  <!--Question 4 and Bullets-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h2 style="color: darkgreen; font-size: 30px;">Has any recent historical event severely impacted energy/electricity consumption?</h1>
+        <p style="color: navy; font-size: 26px;">Covid, Mining (Bitcoin), Population Change</p>
+     </div>
+    </div>
+  
+  <!--Rikin's Chart-->
+  <div class="chartBox">
+    <canvas id="myChart3" width="1200" height="600"></canvas>
+  </div>
+  <script src="{{ url_for('static', filename='Energy_usage.js') }}"></script>
+    <!-- <script src="Energy_usage.js"></script> -->
+  </div>
+  
+  <!--Question 5 and Bullets--> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h2 style="color: darkgreen; font-size: 30px;">Which countries are producing the most renewable electricity?</h2>
+        <p style="color: navy; font-size: 26px;">We are looking at the ratio between the electricity production from renewables (hydro, wind, geothermal and solar) and the total electricity production of a country. These figures are shown as a percentage of the country's total electricity produced.</p>
+        <h3 style="color: #640700; font-size: 20px;">Key Findings:</h3>
+        <ul>
+          <li style="color:#640700; font-size: 18px;">Norway has the highest percentage of electricity produced using renewable resources.</li>
+          <ul>
+          <li style="color:#640700; font-size: 18px;">Norway had 98.37% of their electricity pruced from renewables (hydro, wind, geothermal and solar).</li>
+          </ul>
+          <li style="color:#640700; font-size: 18px;">Brazil and New Zealand also had very high percentages of their electricity produced using renewable resources.</li>
+          <ul>
+          <li style="color:#640700; font-size: 18px;">Brazil: 84.1%</li>
+          <li style="color:#640700; font-size: 18px;">New Zealand: 80.01%</li>  
+          </ul>
+      </div>
+    </div>
+
+  <!--Laura's Bar Chart-->
+  <div class="col-md-5">
+    <div id="bar"></div>
+  </div>
+
+  <!--Laura's Tool Tip Info-->  
+    <div id="tooltip" class="hidden">
+      <p><strong>Renewable Electricity</strong></p>
+      <p><span id="value">100</span></p>
+    </div>
+    <svg width="1200" height="600"></svg>
+    <script src="{{ url_for('static', filename='plotL.js') }}"></script>
+    <!-- <script src="plotL.js"></script> -->
+    <!-- <script src="{{ url_for('static', filename='plot2L.js') }}"></script> -->
+  </div>
+
+
+  <!--Final Wrap Up, if Needed/Wanted--> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h2 style="color: darkgreen; font-size: 20px;">For more information, please visit: https://github.com/rikinp22/project_3_group/blob/main/README.md</h2>   
+      </div>
+    </div>
+    </div>
+  </body>  
+
+
+</html>
