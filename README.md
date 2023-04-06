@@ -18,8 +18,8 @@ The data set used for this project can be found at: https://www.kaggle.com/datas
    * For reference: the population increased by 47% and global GDP soar up by 274% for the last 3 decades. 
 2. How do energy trends differ between fossil fuel type?
    * Across the 30 years, US, Russia, India and China had the highest overall consumption across all fossil fuel energy types.
-   * Oil and natural gas increased over time for most countries.
-   * Coal consumption increased over time only for China and India.
+   * Oil and coal consumption has decreased in US and Russia, while natural gas has increased
+   * In India and China all three sources have increased, but natural gas still stays on the lower end
 3. What has been the impact of the Paris Agreement?
    * Will need Kelsey to complete
 4. Has any recent historical event severely impacted energy/electricity consumption?
@@ -31,7 +31,7 @@ Brazil: 84.1%
 New Zealand: 80.01%
 
 ## Support
-To complete this assignment, we attended class, reviewed notes, attended office hours and utilized tutoring sessions. We also consulted, troubleshot and shared code amongst the team. Additionally, we used outside sources for assistance. One resource that was heavily consulted for part of this project was the YouTube channel Data Science for Everyone. 
+To complete this assignment, we attended class, reviewed notes, attended office hours and utilized tutoring sessions. We also consulted, troubleshot and shared code amongst the team. Additionally, we used outside sources for assistance. One resource that was heavily consulted for part of this project was the YouTube channel Data Science for Everyone. We also used the Javascript plotly website to assist in coding our map animation. 
 
 ## Submission Includes 
 * Will complete where TAs can find all final code once we are fully finished loading items to GitHub
@@ -41,6 +41,6 @@ To complete this assignment, we attended class, reviewed notes, attended office 
 * Final Code and HTML:
 
 ## References
-*GDP: https://www.macrotrends.net/countries/WLD/world/gdp-gross-domestic-product <br>
-*Population: https://www.macrotrends.net/countries/WLD/world/population
-
+* GDP: https://www.macrotrends.net/countries/WLD/world/gdp-gross-domestic-product <br>
+* Population: https://www.macrotrends.net/countries/WLD/world/population
+* code for animated map based off of: https://plotly.com/javascript/map-animations/
