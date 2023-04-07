@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def webprint():
+def project_site():
     return render_template('index.html') 
 
 if __name__ == '__main__':
