@@ -23,7 +23,7 @@ The data set used for this project can be found at: https://www.kaggle.com/datas
 3. What has been the impact of the Paris Agreement?
    * Of the top 10 CO2 emitters in 2010, only the United States, Japan, Germany, and the United Kingdom have made progress towards the 2030 emissions goal
 4. Has any recent historical event severely impacted energy/electricity consumption?
-   * Will need Rikin to complete
+   * Looking at Covid and mining (Bitcoin), these two did not cause any impact on energy/electricity consumption. However, the only correlation we determined in energy/electricity consumption was the worldwide population increase.
 5. Which countries are producing the most renewable electricity?
    * Norway has the highest percentage of electricity produced using renewable resources. Norway had 98.37% of their electricity pruced from renewables (hydro, wind, geothermal and solar).
    * Brazil and New Zealand also had very high percentages of their electricity produced using renewable resources.
