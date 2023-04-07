@@ -21,9 +21,9 @@ The data set used for this project can be found at: https://www.kaggle.com/datas
    * Oil and coal consumption has decreased in US and Russia, while natural gas has increased
    * In India and China all three sources have increased, but natural gas still stays on the lower end
 3. What has been the impact of the Paris Agreement?
-   * Will need Kelsey to complete
+   * Of the top 10 CO2 emitters in 2010, only the United States, Japan, Germany, and the United Kingdom have made progress towards the 2030 emissions goal
 4. Has any recent historical event severely impacted energy/electricity consumption?
-   * Will need Rikin to complete
+   * Looking at Covid and mining (Bitcoin), these two did not cause any impact on energy/electricity consumption. However, the only correlation we determined in energy/electricity consumption was the worldwide population increase.
 5. Which countries are producing the most renewable electricity?
    * Norway has the highest percentage of electricity produced using renewable resources. Norway had 98.37% of their electricity pruced from renewables (hydro, wind, geothermal and solar).
    * Brazil and New Zealand also had very high percentages of their electricity produced using renewable resources.
@@ -33,14 +33,22 @@ New Zealand: 80.01%
 ## Support
 To complete this assignment, we attended class, reviewed notes, attended office hours and utilized tutoring sessions. We also consulted, troubleshot and shared code amongst the team. Additionally, we used outside sources for assistance. One resource that was heavily consulted for part of this project was the YouTube channel Data Science for Everyone. We also used the Javascript plotly website to assist in coding our map animation. 
 
+The following site was referenced for help with our flask API
+https://stackoverflow.com/questions/10372883/simple-flask-application-that-reads-its-content-from-a-html-file-external-styl
+
 ## Submission Includes 
-* Will complete where TAs can find all final code once we are fully finished loading items to GitHub
-* Proposal:
-* SQL:
-* Flask:
-* Final Code and HTML:
+* Proposal - Google Doc Link: https://docs.google.com/document/d/1YnERv2AvJth-A70WNX9ygoJ3A8_FFP9W2N04FEKUF0k/edit#heading=h.avm86vbj4ny
+* Dataset - Kaggle Link: https://www.kaggle.com/datasets/shub218/energy-data-1990-2020?select=Energy+data+1990+-+2020.csv
+* SQL - query_energy_sources.sql (used PGAdmin PostGres)
+* Flask: "flask" folder contains all of our final documents, including updated HTMLs that run on Flask. This is the code and data needed to run our dashboard page with multiple user driven interactions
+* Final Code: Final code can be found in either the "flask" folder or "Project3-Final" folder
+* HTML/CSS: "Project3-Final" folder for the HTML version (including the CSS file) of the presentation
+* To note JavaScript library not shown in class can be found in the "flask" folder --> "static" folder --> plotK.js
+  * ChartJS was used
 
 ## References
 * GDP: https://www.macrotrends.net/countries/WLD/world/gdp-gross-domestic-product <br>
 * Population: https://www.macrotrends.net/countries/WLD/world/population
 * code for animated map based off of: https://plotly.com/javascript/map-animations/
+* The following site was where most of our information about the Paris Agreement came from
+https://www.un.org/en/climatechange/paris-agreement
