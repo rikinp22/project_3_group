@@ -36,9 +36,6 @@ To complete this assignment, we attended class, reviewed notes, attended office 
 The following site was referenced for help with our flask API
 https://stackoverflow.com/questions/10372883/simple-flask-application-that-reads-its-content-from-a-html-file-external-styl
 
-The following site was where most of our information about the Paris Agreement came from
-https://www.un.org/en/climatechange/paris-agreement
-
 ## Submission Includes 
 * Proposal - Google Doc Link: https://docs.google.com/document/d/1YnERv2AvJth-A70WNX9ygoJ3A8_FFP9W2N04FEKUF0k/edit#heading=h.avm86vbj4ny
 * Dataset - Kaggle Link: https://www.kaggle.com/datasets/shub218/energy-data-1990-2020?select=Energy+data+1990+-+2020.csv
@@ -53,3 +50,5 @@ https://www.un.org/en/climatechange/paris-agreement
 * GDP: https://www.macrotrends.net/countries/WLD/world/gdp-gross-domestic-product <br>
 * Population: https://www.macrotrends.net/countries/WLD/world/population
 * code for animated map based off of: https://plotly.com/javascript/map-animations/
+* The following site was where most of our information about the Paris Agreement came from
+https://www.un.org/en/climatechange/paris-agreement
