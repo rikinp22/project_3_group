@@ -21,7 +21,7 @@ The data set used for this project can be found at: https://www.kaggle.com/datas
    * Oil and coal consumption has decreased in US and Russia, while natural gas has increased
    * In India and China all three sources have increased, but natural gas still stays on the lower end
 3. What has been the impact of the Paris Agreement?
-   * Will need Kelsey to complete
+   * Of the top 10 CO2 emitters in 2010, only the United States, Japan, Germany, and the United Kingdom have made progress towards the 2030 emissions goal
 4. Has any recent historical event severely impacted energy/electricity consumption?
    * Will need Rikin to complete
 5. Which countries are producing the most renewable electricity?
@@ -32,6 +32,12 @@ New Zealand: 80.01%
 
 ## Support
 To complete this assignment, we attended class, reviewed notes, attended office hours and utilized tutoring sessions. We also consulted, troubleshot and shared code amongst the team. Additionally, we used outside sources for assistance. One resource that was heavily consulted for part of this project was the YouTube channel Data Science for Everyone. We also used the Javascript plotly website to assist in coding our map animation. 
+
+The following site was referenced for help with our flask API
+https://stackoverflow.com/questions/10372883/simple-flask-application-that-reads-its-content-from-a-html-file-external-styl
+
+The following site was where most of our information about the Paris Agreement came from
+https://www.un.org/en/climatechange/paris-agreement
 
 ## Submission Includes 
 * Will complete where TAs can find all final code once we are fully finished loading items to GitHub
