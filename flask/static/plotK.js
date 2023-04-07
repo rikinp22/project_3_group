@@ -96,9 +96,41 @@ d3.csv("static/energy_sources.csv").then(function (data) {
    console.log(emissionsTop2020);
    var emissionsTop2020Ver2 = []
    emissionsTop2020Ver2.push(0);
-   for (let i = 0; i < emissionsTop2020.length; i++) {
-    emissionsTop2020Ver2.push(emissionsTop2020[i]);
-   };
+   for (let i = 0; i < emissionSort2020.length; i++) {
+    if (emissionSort2020[i].Country == "China") {
+      emissionsTop2020Ver2.push(emissionSort2020[i].CO2_emissions)
+    }
+    else if (emissionSort2020[i].Country == "United States") {
+      emissionsTop2020Ver2.push(emissionSort2020[i].CO2_emissions)
+    }
+    else if (emissionSort2020[i].Country == "Russia") {
+      emissionsTop2020Ver2.push(emissionSort2020[i].CO2_emissions)
+    }
+    else if (emissionSort2020[i].Country == "India") {
+      emissionsTop2020Ver2.push(emissionSort2020[i].CO2_emissions)
+    }
+    else if (emissionSort2020[i].Country == "Japan") {
+      emissionsTop2020Ver2.push(emissionSort2020[i].CO2_emissions)
+    }
+    else if (emissionSort2020[i].Country == "Germany") {
+      emissionsTop2020Ver2.push(emissionSort2020[i].CO2_emissions)
+    }
+    else if (emissionSort2020[i].Country == "South Korea") {
+      emissionsTop2020Ver2.push(emissionSort2020[i].CO2_emissions)
+    }
+    else if (emissionSort2020[i].Country == "Canada") {
+      emissionsTop2020Ver2.push(emissionSort2020[i].CO2_emissions)
+    }
+    else if (emissionSort2020[i].Country == "Iran") {
+      emissionsTop2020Ver2.push(emissionSort2020[i].CO2_emissions)
+    }
+    else if (emissionSort2020[i].Country == "United Kingdom") {
+      emissionsTop2020Ver2.push(emissionSort2020[i].CO2_emissions)
+    }
+
+  }
+
+   ;
    emissionsTop2020Ver2.push(0);
    console.log("emissionsTop2020Ver2");
    console.log(emissionsTop2020Ver2);
