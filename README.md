@@ -40,11 +40,14 @@ The following site was where most of our information about the Paris Agreement c
 https://www.un.org/en/climatechange/paris-agreement
 
 ## Submission Includes 
-* Will complete where TAs can find all final code once we are fully finished loading items to GitHub
-* Proposal:
-* SQL:
-* Flask:
-* Final Code and HTML:
+* Proposal - Google Doc Link: https://docs.google.com/document/d/1YnERv2AvJth-A70WNX9ygoJ3A8_FFP9W2N04FEKUF0k/edit#heading=h.avm86vbj4ny
+* Dataset - Kaggle Link: https://www.kaggle.com/datasets/shub218/energy-data-1990-2020?select=Energy+data+1990+-+2020.csv
+* SQL - query_energy_sources.sql (used PGAdmin PostGres)
+* Flask: "flask" folder contains all of our final documents, including updated HTMLs that run on Flask. This is the code and data needed to run our dashboard page with multiple user driven interactions
+* Final Code: Final code can be found in either the "flask" folder or "Project3-Final" folder
+* HTML/CSS: "Project3-Final" folder for the HTML version (including the CSS file) of the presentation
+* To note JavaScript library not shown in class can be found in the "flask" folder --> "static" folder --> plotK.js
+  * ChartJS was used
 
 ## References
 * GDP: https://www.macrotrends.net/countries/WLD/world/gdp-gross-domestic-product <br>
